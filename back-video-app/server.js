@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Configurar Mongoose
-mongoose.connect('mongodb+srv://juancaa1212:NNWiCwR1FBSwTXOG@cluster0.1q5y6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/yourdb', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Configurar AWS S3
 const s3 = new aws.S3({
